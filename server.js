@@ -43,6 +43,14 @@ res.render('home.hbs',{
 });
 });
 
+app.get('/',(req, res) => {
+// res.send('<h1>Hello Express!<h1>');
+res.render('FAQ.hbs',{
+  pageTitle: 'FAQ Page',
+  welcomeMessage: 'Welcome to FAQ Page'
+});
+});
+
 app.get('/about', (req, res) => {
 res.render('about.hbs', {
   pageTitle: 'About Us here',

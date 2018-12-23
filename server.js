@@ -43,7 +43,7 @@ res.render('home.hbs',{
 });
 });
 
-app.get('/',(req, res) => {
+app.get('/faq',(req, res) => {
 // res.send('<h1>Hello Express!<h1>');
 res.render('FAQ.hbs',{
   pageTitle: 'FAQ Page',
